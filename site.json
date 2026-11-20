@@ -2,24 +2,13 @@
   "title": "Shirely / notes",
   "author": "Shirely",
   "description": "关于代码、工具，以及把事情做简单的练习。",
-  "url": "https://mizore.blog",
-  "about": "https://about.mizore.blog",
-  "repo": "https://github.com/mizorewww/blog",
-  "email": "www@mizore.blog",
+  "url": "https://shirelyyang6-prog.github.io/shirely-blog",
+  "about": "https://github.com/shirelyyang6-prog",
+  "repo": "https://github.com/shirelyyang6-prog/shirely-blog",
   "sameAs": [
-    "https://github.com/mizorewww",
-    "https://x.com/mizorewww",
-    "https://t.me/aac6fef"
+    "https://github.com/shirelyyang6-prog"
   ],
   "redirects": [
-    {
-      "from": "/about",
-      "to": "https://about.mizore.blog"
-    },
-    {
-      "from": "/about/",
-      "to": "https://about.mizore.blog"
-    },
     {
       "from": "/zh/search",
       "to": "/search/"
