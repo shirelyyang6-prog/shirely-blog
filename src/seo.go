@@ -9,7 +9,7 @@ import (
 // structuredData is the page's schema.org JSON-LD. json.Marshal escapes <, > and &,
 // so the result cannot close its <script> element.
 func structuredData(p Page) template.JS {
-	author := map[string]any{"@type": "Person", "name": p.Site.Author, "url": p.Site.About, "image": p.Site.URL + "/static/avatar.png"}
+	author := map[string]any{"@type": "Person", "name": p.Site.Author, "url": p.Site.About, "image": p.Site.URL + "/static/avatar.jpg"}
 	if len(p.Site.SameAs) > 0 {
 		author["sameAs"] = p.Site.SameAs
 	}
