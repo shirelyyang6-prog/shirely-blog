@@ -136,7 +136,7 @@ func TestBuild(t *testing.T) {
 			t.Fatal(err)
 		}
 		html := string(b)
-		if strings.Count(html, "<script") > strings.Count(html, `<script type="application/ld+json">`)+3 || !strings.Contains(html, `<style>@font-face`) || !strings.Contains(html, `url("/notes/static/`+version+`/fonts/`) || !strings.Contains(html, `href="/notes/static/`) || !strings.Contains(html, `<main id="main">`) || !strings.Contains(html, `<a href="https://about.mizore.blog" rel="me">关于`) {
+		if strings.Count(html, "<script") > strings.Count(html, `<script type="application/ld+json">`)+3 || !strings.Contains(html, `<style>@font-face`) || !strings.Contains(html, `url("/notes/static/`+version+`/fonts/`) || !strings.Contains(html, `href="/notes/static/`) || !strings.Contains(html, `<main id="main">`) || !strings.Contains(html, `<a href="https://github.com/shirelyyang6-prog" rel="me">关于`) {
 			t.Fatalf("invalid static page %s", name)
 		}
 		if strings.Contains(html, "og:image") || strings.Contains(html, "summary_large_image") || strings.Contains(html, "max-image-preview") || !strings.Contains(html, `<meta name="twitter:card" content="summary">`) {
